@@ -2,72 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Me - Tomas G.</title>
+  <title>My Capstone Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header, section {
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 1rem;
+      border-radius: 10px;
+      padding: 1.5rem;
+      backdrop-filter: blur(5px);
+    }
+
+    header {
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #a8ff8c;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #fff;
+    }
+
+    video, audio {
+      width: 100%;
+      max-width: 800px;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #eee;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 1rem;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- main heading with name -->
-  <h1>Tomas Garcia</h1>
+<header>
+  <h1>My Capstone Project</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#video">Video</a>
+    <a href="#audio">Audio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <!-- subheading with profession and a fun fact -->
-  <h2>Striving developer, My favorite color is green. </h2>
+<section id="home">
+  <h2>Welcome</h2>
+  <p>This is my multimedia portfolio showcasing original artwork, a composed musical section, and timelapse video!</p>
+</section>
 
-  <!-- introduction paragraph -->
-  <p>
-   Hello! My name is Tomas, and i love the beach, hiking, and learning new things!
-  </p>
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="/Users/tomasgarcia/Documents/Capstone/wolf.png" alt="Image 1">
+    <img src="/Users/tomasgarcia/Documents/Capstone/bunn  -2.png" alt="Image 2">
+    <img src="/Users/tomasgarcia/Documents/Capstone/Untitled design-8.png" alt="Image 3">
+    <img src="/Users/tomasgarcia/Documents/Capstone/girl.png" alt="Image 4">
+    <img src="/Users/tomasgarcia/Documents/Capstone/Untitled design-6.png" alt="Image 5">
+    <img src="/Users/tomasgarcia/Documents/Capstone/Untitled design-7.png" alt="Image 6">
+  </div>
+</section>
 
-  <!-- unordered list of favorite hobbies/interests -->
-  <h3>My Favorite Hobbies:</h3>
-  <ul>
-    <li>Sketching</li>
-    <li>Hiking</li>
-    <li>Fishing</li>
-    <li>Traveling</li>
-    <li>Playing indie games</li>
-  </ul>
+<section id="video">
+  <h2>My Video</h2>
+  <video controls>
+    <source src="/Users/tomasgarcia/Documents/Capstone/Illustration8.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
 
-  <!-- Ordered list of top goals/achievements -->
-  <h3>Top Goals & Achievements:</h3>
-  <ol>
-    <li>Built my first full-stack web app</li>
-    <li>Become a full time developer</li>
-    <li>Traveled to 10+ countries</li>
-    <li>Learn rust and java</li>
-    <li>Develop something meanignful</li>
-  </ol>
+<section id="audio">
+  <h2>My Audio Clip</h2>
+  <audio controls>
+    <source src="/Users/tomasgarcia/Documents/Capstone/Whisper of Stars.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</section>
 
-  <!-- Image representing something about me -->
-  <h3>A Little Visual:</h3>
-  <img src="https://via.placeholder.com/300x200?text=My+Happy+Place" alt="My happy place" width="300">
+<section id="contact">
+  <h2>About / Contact</h2>
+  <p>Created by Tomas Garcia</p>
+  <p>Email: tg79971@email.vccs.edu.com</p>
+  <p>This website was built to share my original creative media for class presentation.</p>
+</section>
 
-  <!-- link to favorite website -->
-  <p>Check out one of my favorite sites: 
-    <a href="https://www.oracle.com/java/" target="_blank">Java</a>
-  </p>
-
- 
-  <h3>Weekly Learning Schedule:</h3>
-  <table border="1" cellpadding="10">
-    <tr>
-      <th>Day</th>
-      <th>Focus</th>
-    </tr>
-    <tr>
-      <td>Monday</td>
-      <td>Java Projects</td>
-    </tr>
-    <tr>
-      <td>Wednesday</td>
-      <td>Multimedia Projects</td>
-    </tr>
-  </table>
-
-  
-  <footer>
-    <p>Tomas Garcia 2025</p>
-  </footer>
+<footer>
+  &copy; 2025 My Creative Portfolio
+</footer>
 
 </body>
 </html>
+
